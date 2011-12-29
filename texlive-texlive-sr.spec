@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-sr.doc.ta
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 TeXLive texlive-sr package.
@@ -37,7 +35,6 @@ TeXLive texlive-sr package.
 %doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.pdf
 %doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.sty
 %doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,5 +45,3 @@ TeXLive texlive-sr package.
 %install
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
