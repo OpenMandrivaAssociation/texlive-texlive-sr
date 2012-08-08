@@ -1,12 +1,12 @@
-# revision 23026
+# revision 26818
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-sr
-Version:	20111104
-Release:	2
+Version:	20120808
+Release:	1
 Summary:	TeX Live manual (Serbian)
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -24,12 +24,12 @@ TeXLive texlive-sr package.
 %files
 %doc %{_texmfdir}/doc/texlive/texlive-sr/Makefile
 %doc %{_texmfdir}/doc/texlive/texlive-sr/README-SR.txt
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2011-install-tl-collections-freebsd-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2011-install-tl-expert-gui-freebsd-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2011-install-tl-wizard-win32-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2011-tlmgr-main-screen-freebsd-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2011-tlmgr-options-freebsd-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2011-tlmgr-paper-options-freebsd-sr.png
+%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-install-tl-collections-freebsd-sr.png
+%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-install-tl-expert-gui-freebsd-sr.png
+%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-install-tl-wizard-win32-sr.png
+%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-tlmgr-main-screen-freebsd-sr.png
+%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-tlmgr-options-freebsd-sr.png
+%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-tlmgr-paper-options-freebsd-sr.png
 %doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.css
 %doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.html
 %doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.pdf
