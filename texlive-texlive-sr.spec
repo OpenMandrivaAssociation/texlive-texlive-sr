@@ -1,11 +1,11 @@
-# revision 26818
+# revision 30653
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-sr
-Version:	20120808
+Version:	20131009
 Release:	1
 Summary:	TeX Live manual (Serbian)
 Group:		Publishing
@@ -22,19 +22,19 @@ TeXLive texlive-sr package.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdir}/doc/texlive/texlive-sr/Makefile
-%doc %{_texmfdir}/doc/texlive/texlive-sr/README-SR.txt
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-install-tl-collections-freebsd-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-install-tl-expert-gui-freebsd-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-install-tl-wizard-win32-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-tlmgr-main-screen-freebsd-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-tlmgr-options-freebsd-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/images/tl2012-tlmgr-paper-options-freebsd-sr.png
-%doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.css
-%doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.html
-%doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.pdf
-%doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.sty
-%doc %{_texmfdir}/doc/texlive/texlive-sr/texlive-sr.tex
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/Makefile
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/README-SR.txt
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2013-install-tl-collections-freebsd-sr.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2013-install-tl-expert-gui-freebsd-sr.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2013-install-tl-wizard-win32-sr.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2013-tlmgr-main-screen-freebsd-sr.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2013-tlmgr-options-freebsd-sr.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2013-tlmgr-paper-options-freebsd-sr.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/texlive-sr.css
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/texlive-sr.html
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/texlive-sr.pdf
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/texlive-sr.sty
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr/texlive-sr.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -43,23 +43,5 @@ TeXLive texlive-sr package.
 %build
 
 %install
-mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120808-1
-+ Revision: 812908
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111104-2
-+ Revision: 756702
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111104-1
-+ Revision: 719703
-- texlive-texlive-sr
-- texlive-texlive-sr
-- texlive-texlive-sr
-- texlive-texlive-sr
-
+mkdir -p %{buildroot}%{_texmfdistdir}
+cp -fpar doc %{buildroot}%{_texmfdistdir}
