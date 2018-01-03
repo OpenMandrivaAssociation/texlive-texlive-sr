@@ -1,12 +1,6 @@
-# revision 34072
-# category TLCore
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
 Name:		texlive-texlive-sr
-Version:	20140621
-Release:	4
+Version:	20170515
+Release:	1
 Summary:	TeX Live manual (Serbian)
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -22,20 +16,7 @@ TeXLive texlive-sr package.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/Makefile
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/README-SR.txt
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2014-install-tl-collections-freebsd-sr.png
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2014-install-tl-expert-gui-freebsd-sr.png
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2014-install-tl-first.stage-win32-sr.png
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2014-install-tl-wizard-win32-sr.png
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2014-tlmgr-main-screen-freebsd-sr.png
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2014-tlmgr-options-freebsd-sr.png
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/images/tl2014-tlmgr-paper-options-freebsd-sr.png
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/texlive-sr.css
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/texlive-sr.html
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/texlive-sr.pdf
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/texlive-sr.sty
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr/texlive-sr.tex
+%doc %{_texmfdistdir}/doc/texlive/texlive-sr
 
 #-----------------------------------------------------------------------
 %prep
