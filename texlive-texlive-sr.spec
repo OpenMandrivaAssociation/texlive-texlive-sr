@@ -1,5 +1,5 @@
 Name:		texlive-texlive-sr
-Version:	20170515
+Version:	20180409
 Release:	1
 Summary:	TeX Live manual (Serbian)
 Group:		Publishing
