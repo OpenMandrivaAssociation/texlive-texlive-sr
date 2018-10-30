@@ -1,6 +1,6 @@
 Name:		texlive-texlive-sr
 Version:	20180409
-Release:	1
+Release:	2
 Summary:	TeX Live manual (Serbian)
 Group:		Publishing
 URL:		http://tug.org/texlive
