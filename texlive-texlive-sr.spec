@@ -1,29 +1,19 @@
-Name:		texlive-texlive-sr
-Version:	54594
-Release:	2
+%global tl_name texlive-sr
+%global tl_revision 54594
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
+Release:	1
 Summary:	TeX Live manual (Serbian)
 Group:		Publishing
-URL:		https://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-sr.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-sr.doc.r%{version}.tar.xz
+URL:		https://www.ctan.org/pkg/texlive-sr
+License:	LPPL
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-sr.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-sr.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-TeXLive texlive-sr package.
+TeX Live manual (Serbian)
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/texlive/texlive-sr
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
